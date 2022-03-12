@@ -30,14 +30,20 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide menu_brand_fig">
-                                    <img src="https://picsum.photos/1000/500?random=2" class="d-block w-100 h-100">
+                                <div class="swiper-slide">
+                                    <div class="menu_brand_fig">
+                                        <img src="https://picsum.photos/750/500?random=2" class="d-block">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide menu_brand_fig">
-                                    <img src="https://picsum.photos/1000/500?random=3" class="d-block w-100 h-100">
+                                <div class="swiper-slide">
+                                    <div class="menu_brand_fig">
+                                        <img src="https://picsum.photos/750/500?random=3" class="d-block">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide menu_brand_fig">
-                                    <img src="https://picsum.photos/1000/500?random=4" class="d-block w-100 h-100">
+                                <div class="swiper-slide">
+                                    <div class="menu_brand_fig">
+                                        <img src="https://picsum.photos/750/500?random=4" class="d-block">
+                                    </div>
                                 </div>
                                 ...
                             </div>
@@ -153,306 +159,308 @@
                     </div>
                 </div>
             </div>
-            <div class="menu_main row mt-3 position-relative">
-                <div class="menu_nav col-12 d-lg-none">
-                    <div class="menu_first_color_bg position-relative d-flex h-100">
-                        <div class="swiper menu_nav_swiper">
-                            <!-- Additional required wrapper -->
-                            <ul class="swiper-wrapper">
-                                <!-- Slides -->
-                                <li class="swiper-slide">
-                                    <a class="menu_category_anchor fw-bold nav-link menu_nav_active py-2 h-100 text_gray"
-                                        href="#">種類一</a>
+            <div class="menu_main">
+                <div class="row g-0 mt-3 position-relative">
+                    <div class="menu_nav col-12 d-lg-none">
+                        <div class="menu_first_color_bg position-relative d-flex h-100">
+                            <div class="swiper menu_nav_swiper">
+                                <!-- Additional required wrapper -->
+                                <ul class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link menu_nav_active py-2 h-100 text_gray"
+                                            href="#">種類一</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類二</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類三</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類四</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類五</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類六</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="checkbox" name="" id="menu_nav_control" class="d-none">
+                            <ul class="menu_dropdown_menu position-absolute bg_white w-100">
+                                <div class="row row-cols-2 p-4">
+                                    <li class="col p-2"><a
+                                            class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
+                                            href="#">種類一</a></li>
+                                    <li class="col p-2"><a
+                                            class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
+                                            href="#">種類二</a></li>
+                                    <li class="col p-2"><a
+                                            class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
+                                            href="#">種類三</a></li>
+                                </div>
+                            </ul>
+                            <div class="nav-item dropdown d-inline-block p-2">
+                                <label
+                                    class="nav-link dropdown-toggle rounded_corner_small bg_white h-100 d-flex justify-content-center align-items-center"
+                                    href="#" role="button" aria-expanded="false" for="menu_nav_control">
+                                    <i class="fas fa-angle-down menu_first_color_text"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_borad col-12 col-lg-4">
+                        <div class="menu_shadow rounded_corner bg_white mb-2">
+                            <div class="menu_borad_title row justify-content-between p-3">
+                                <h2 class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">分類分類</h2>
+                                <div class="col col-4 menu_borad_select_show">
+                                    <div class="row justify-content-evenly">
+                                        <span class="col text-center">冰</span>
+                                        <span class="col text-center">熱</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="menu_borad_item p-3">
+                                    <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                        class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                                <span class="badge bg_pink">完售</span>
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </li>
-                                <li class="swiper-slide">
-                                    <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
-                                        href="#">種類二</a>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </li>
-                                <li class="swiper-slide">
-                                    <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
-                                        href="#">種類三</a>
-                                </li>
-                                <li class="swiper-slide">
-                                    <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
-                                        href="#">種類四</a>
-                                </li>
-                                <li class="swiper-slide">
-                                    <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
-                                        href="#">種類五</a>
-                                </li>
-                                <li class="swiper-slide">
-                                    <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
-                                        href="#">種類六</a>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <input type="checkbox" name="" id="menu_nav_control" class="d-none">
-                        <ul class="menu_dropdown_menu position-absolute bg_white w-100">
-                            <div class="row row-cols-2 p-4">
-                                <li class="col p-2"><a
-                                        class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
-                                        href="#">種類一</a></li>
-                                <li class="col p-2"><a
-                                        class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
-                                        href="#">種類二</a></li>
-                                <li class="col p-2"><a
-                                        class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
-                                        href="#">種類三</a></li>
-                            </div>
-                        </ul>
-                        <div class="nav-item dropdown d-inline-block p-2">
-                            <label
-                                class="nav-link dropdown-toggle rounded_corner_small bg_white h-100 d-flex justify-content-center align-items-center"
-                                href="#" role="button" aria-expanded="false" for="menu_nav_control">
-                                <i class="fas fa-angle-down menu_first_color_text"></i>
-                            </label>
-                        </div>
                     </div>
-                </div>
-                <div class="menu_borad col-12 col-lg-4">
-                    <div class="menu_shadow rounded_corner bg_white mb-2">
-                        <div class="menu_borad_title row justify-content-between p-3">
-                            <h2 class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">分類分類</h2>
-                            <div class="col col-4 menu_borad_select_show">
-                                <div class="row justify-content-evenly">
-                                    <span class="col text-center">冰</span>
-                                    <span class="col text-center">熱</span>
+                    <div class="menu_borad col-12 col-lg-4">
+                        <div class="menu_shadow rounded_corner bg_white mb-2">
+                            <div class="menu_borad_title row justify-content-between p-3">
+                                <h2 class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">分類分類</h2>
+                                <div class="col col-4 menu_borad_select_show">
+                                    <div class="row justify-content-evenly">
+                                        <span class="col text-center">冰</span>
+                                        <span class="col text-center">熱</span>
+                                    </div>
                                 </div>
                             </div>
+                            <ul>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                                <span class="badge bg_pink">完售</span>
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li class="menu_borad_item p-3">
-                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
-                                    class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                            <span class="badge bg_pink">完售</span>
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                </div>
-                <div class="menu_borad col-12 col-lg-4">
-                    <div class="menu_shadow rounded_corner bg_white mb-2">
-                        <div class="menu_borad_title row justify-content-between p-3">
-                            <h2 class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">分類分類</h2>
-                            <div class="col col-4 menu_borad_select_show">
-                                <div class="row justify-content-evenly">
-                                    <span class="col text-center">冰</span>
-                                    <span class="col text-center">熱</span>
+                    <div class="menu_borad col-12 col-lg-4">
+                        <div class="menu_shadow rounded_corner bg_white mb-2">
+                            <div class="menu_borad_title row justify-content-between p-3">
+                                <h2 class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">分類分類</h2>
+                                <div class="col col-4 menu_borad_select_show">
+                                    <div class="row justify-content-evenly">
+                                        <span class="col text-center">冰</span>
+                                        <span class="col text-center">熱</span>
+                                    </div>
                                 </div>
                             </div>
+                            <ul>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="menu_borad_item p-3">
+                                    <a href="" class="row justify-content-between align-items-center">
+                                        <div class="col col-8 d-flex align-items-center">
+                                            <div class="menu_borad_item_img">
+                                                <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                            </div>
+                                            <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                                名稱名稱
+                                            </p>
+                                        </div>
+                                        <div class="col col-4 menu_borad_select_show">
+                                            <div class="row justify-content-evenly">
+                                                <span class="col text-center">55</span>
+                                                <span class="col text-center">66</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                            <span class="badge bg_pink">完售</span>
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="menu_borad col-12 col-lg-4">
-                    <div class="menu_shadow rounded_corner bg_white mb-2">
-                        <div class="menu_borad_title row justify-content-between p-3">
-                            <h2 class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">分類分類</h2>
-                            <div class="col col-4 menu_borad_select_show">
-                                <div class="row justify-content-evenly">
-                                    <span class="col text-center">冰</span>
-                                    <span class="col text-center">熱</span>
-                                </div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="menu_borad_item p-3">
-                                <a href="" class="row justify-content-between align-items-center">
-                                    <div class="col col-8 d-flex align-items-center">
-                                        <div class="menu_borad_item_img">
-                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
-                                        </div>
-                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
-                                            名稱名稱
-                                        </p>
-                                    </div>
-                                    <div class="col col-4 menu_borad_select_show">
-                                        <div class="row justify-content-evenly">
-                                            <span class="col text-center">55</span>
-                                            <span class="col text-center">66</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -992,9 +1000,31 @@
         });
 
         var swiper2 = new Swiper(".menu_nav_swiper", {
-            slidesPerView: 5,
+            slidesPerView: 3.5,
             spaceBetween: 0,
         });
+    </script>
+
+    <script>
+        window.addEventListener('scroll', stickyNav)
+        
+        const main = document.querySelector('.menu_main')
+        // const banner = document.querySelector('.menu_banner')
+        // const abstract = document.querySelector('.menu_abstract')
+        const topOfMain = main.offsetTop
+        
+        const nav = document.querySelector('.menu_nav')
+
+        function stickyNav(){
+            if (window.scrollY >= topOfMain){
+                nav.classList.add('menu_nav_fixed')
+                main.classList.add('menu_nav_fixed_padding')
+            }
+            else{
+                nav.classList.remove('menu_nav_fixed')
+                main.classList.remove('menu_nav_fixed_padding')
+            }
+        }
     </script>
 </body>
 
