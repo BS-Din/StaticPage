@@ -180,6 +180,11 @@
     }
     
     /* 外部 */
+    .menu_bg_wrap{
+        padding-bottom: 60px;
+        min-height: 100vh;
+    }
+    
     .menu_shadow{
         box-shadow: 0px 2px 3px -1px hsl(0deg 0% 68% / 50%);
     }
