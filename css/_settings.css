@@ -213,20 +213,31 @@ input{
     border: 1px solid var(--din-input-border);
 }
 
-input[type="text"]{
-    border-radius: var(--din-card-border-radius-small);
-}
-
-input[type="text"]:not([disabled]):hover{
-    border: 1px solid black;
-}
-
-input[type="text"]:focus{
+.input_noshadow:focus{
     box-shadow: none !important;
     border-color: var(--din-input-border);
 }
 
-input[type="text"]:focus-visible{
+input[type="text"], input[type="text"]{
+    border-radius: var(--din-card-border-radius-small);
+}
+
+input[type="text"]:not([disabled], .is-invalid):hover, 
+input[type="tel"]:not([disabled], .is-invalid):hover
+{
+    border: 1px solid black;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus
+{
+    box-shadow: none !important;
+    border-color: var(--din-input-border);
+}
+
+input[type="text"]:not(.is-invalid):focus-visible,
+input[type="tel"]:not(.is-invalid):focus-visible
+{
     outline: none !important;
     border-width: 1px;
 }
