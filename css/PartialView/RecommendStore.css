@@ -1,0 +1,42 @@
+.brand_recommend_errorpic{
+    width: 53%;
+}
+.brand_recommend_title{
+    font-size: 18px;
+}
+.fa-arrow-alt-circle-right{
+    font-size: 22px;
+    }
+.brand_recommend_more{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card_logo{
+    width: 70px; 
+    height: 70px; 
+    top: 10px; 
+    left: 10px;
+}
+.card_category{
+    width: 20px;
+}
+@media screen and (min-width:576px){
+        .brand_recommend_errorpic{
+        width: 30%;
+    }
+}
+@media screen and (min-width:992px){
+    .brand_recommend_title{
+    font-size: 30px;
+    }
+    .fa-arrow-alt-circle-right,
+    .brand_recommend_more{
+            font-size: 22px;
+    }
+    .brand_recommend_errorpic{
+            width: 19%;
+    }
+    .brand_recommend_errortext{
+        font-size: 17px;
+    }
+}
