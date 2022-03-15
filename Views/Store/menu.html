@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/_settings.css">
+    <link rel="stylesheet" href="../../css/Store/Menu.css">
+</head>
+
+<body>
+    <div class="menu_bg_wrap bg_page w-100 p-lg-2">
+        <div class="menu_container py-2">
+            <div class="menu_shadow menu_banner bg_pink text_white text-center fw-bold fz_16 py-1 mb-2 rounded_corner">
+                幫你鈴聲下載，是否。
+            </div>
+            <div class="menu_shadow menu_abstract rounded_corner">
+                <div class="row g-0 flex-lg-row-reverse">
+                    <div class="col col-12 col-lg-8">
+                        <!-- Slider main container -->
+                        <div class="swiper menu_fig_swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="menu_brand_fig">
+                                        <img src="https://picsum.photos/750/500?random=2" class="d-block">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu_brand_fig">
+                                        <img src="https://picsum.photos/750/500?random=3" class="d-block">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu_brand_fig">
+                                        <img src="https://picsum.photos/750/500?random=4" class="d-block">
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next text-white"></div>
+                            <div class="swiper-button-prev text-white"></div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-4">
+                        <div class="row flex-column flex-lg-column-reverse h-100">
+                            <div class="col flex-grow-0">
+                                <div class="menu_func_area d-flex align-items-center menu_first_color_bg">
+                                    <div class="menu_function col col-3">
+                                        <button type="button" data-bs-toggle="modal"
+                                            data-bs-target="#menu_promotion_modal"
+                                            class="w-100 d-flex flex-column justify-content-evenly align-items-center py-3">
+                                            <div
+                                                class="menu_func_icon bg_white rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-tag fz_18 menu_first_color_text"></i>
+                                            </div>
+                                            <p class="text_white m-0 mt-2">優惠</p>
+                                        </button>
+                                    </div>
+                                    <div class="menu_function col col-3">
+                                        <button type="button" data-bs-toggle="modal"
+                                            data-bs-target="#menu_mealmethod_modal"
+                                            class="w-100 d-flex flex-column justify-content-evenly align-items-center py-3">
+                                            <div
+                                                class="menu_func_icon bg_white rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-utensils fz_18 menu_first_color_text"></i>
+                                            </div>
+                                            <p class="text_white m-0 mt-2">用餐方式</p>
+                                        </button>
+                                    </div>
+                                    <div class="menu_function col col-3">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#menu_search_modal"
+                                            class="w-100 d-flex flex-column justify-content-evenly align-items-center py-3">
+                                            <div
+                                                class="menu_func_icon bg_white rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-search fz_18 menu_first_color_text"></i>
+                                            </div>
+                                            <p class="text_white m-0 mt-2">搜尋</p>
+                                        </button>
+                                    </div>
+                                    <div class="menu_function col col-3">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#menu_group_modal"
+                                            class="w-100 d-flex flex-column justify-content-evenly align-items-center py-3">
+                                            <div
+                                                class="menu_func_icon bg_white rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-users fz_18 menu_first_color_text"></i>
+                                            </div>
+                                            <p class="text_white m-0 mt-2">揪團</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="menu_shop d-flex p-3 position-relative bg_white h-100">
+                                    <div class="menu_logo rounded-circle overflow-hidden d-inline-block">
+                                        <img src="https://fakeimg.pl/64x64/200" class="img">
+                                    </div>
+                                    <div class="col menu_shop_content ms-3">
+                                        <h1 class="menu_shop_name fz_15 fw-bold mb-3">品牌名 分店名</h1>
+                                        <div class="menu_shop_information scroll_none">
+                                            <p class="card-text mb-0">店家資訊</p>
+                                            <div class="menu_stars icon_star d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="menu_stars_value">4.8</span>
+                                            <span class="menu_stars_total">(35)</span>
+                                            <div class="menu_shop_formore d-lg-none">
+                                                <button id="menu_shop_formore_btn" type="button" data-bs-toggle="modal"
+                                                    data-bs-target="#menu_formore_modal" class="position-absolute">
+                                                    <i class="fas fa-angle-down me-2"></i>
+                                                    更多
+                                                </button>
+                                            </div>
+                                            <div class="menu_shop_more_content d-none d-lg-block">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fas fa-clock text-center"></i> 10:00 ~ 22:15
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-phone text-center"></i>
+                                                        <a href="tel:12345677"
+                                                            class="menu_first_color_text">12345677</a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-map-marker-alt text-center"></i>
+                                                        <a href="map:..."
+                                                            class="menu_first_color_text">地址對付青春，當天至於交流，地理放。</a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-dollar-sign text-center"></i> 可現金、LINE PAY
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-money-bill text-center"></i> 現金單筆消費上限 $10000
+                                                        <span class="text_pink d-block">
+                                                            (非訂餐時間僅提供預訂)
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-address-card text-center"></i> 此門市支援專屬姓名貼紙
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_main">
+                <div class="row g-0 g-lg-2 mt-3 position-relative">
+                    <div class="menu_nav col-12 d-lg-none">
+                        <div class="menu_first_color_bg position-relative d-flex h-100">
+                            <div class="swiper menu_nav_swiper">
+                                <!-- Additional required wrapper -->
+                                <ul class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link menu_nav_active py-2 h-100 text_gray"
+                                            href="#">種類一</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類二</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類三</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類四</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類五</a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a class="menu_category_anchor fw-bold nav-link py-2 h-100 text_gray"
+                                            href="#">種類六</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="checkbox" name="" id="menu_nav_control" class="d-none">
+                            <ul class="menu_dropdown_menu position-absolute bg_white w-100">
+                                <div class="row row-cols-2 p-4">
+                                    <li class="col p-2"><a
+                                            class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
+                                            href="#">種類一</a></li>
+                                    <li class="col p-2"><a
+                                            class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
+                                            href="#">種類二</a></li>
+                                    <li class="col p-2"><a
+                                            class="menu_category_anchor dropdown-item bg_page rounded_corner_small"
+                                            href="#">種類三</a></li>
+                                </div>
+                            </ul>
+                            <div class="nav-item dropdown d-inline-block p-2">
+                                <label
+                                    class="nav-link dropdown-toggle rounded_corner_small bg_white h-100 d-flex justify-content-center align-items-center"
+                                    href="#" role="button" aria-expanded="false" for="menu_nav_control">
+                                    <i class="fas fa-angle-down menu_first_color_text"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_main_col col-12 col-lg-4">
+                        <template id="menu_borad_temp">
+                            <div class="menu_borad menu_shadow rounded_corner bg_white mb-2">
+                                <div class="menu_borad_title row justify-content-between p-3">
+                                    <h2
+                                        class="menu_category col col-8 menu_first_color_text fw-bold d-inline-block fz_16">
+                                        分類分類</h2>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">冰</span>
+                                            <span class="col text-center">熱</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </template>
+                        
+                        <!-- 用來填入ul，li數量為測試用 -->
+                        <template id="menu_item_temp">
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </template>
+                    </div>
+                    <div class="menu_main_col col-12 col-lg-4">
+                    </div>
+                    <div class="menu_main_col col-12 col-lg-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="menu_cart position-fixed menu_second_color_bg p-3 text-white fw-bold">
+        <div class="row row-cols-3 row-cols-lg-2">
+            <div class="col d-lg-none">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="menu_item_amount">0</span>
+            </div>
+            <div class="col text-center">
+                <i class="fas fa-shopping-cart d-none d-lg-inline-block"></i>
+                <span>
+                    購物車
+                </span>
+            </div>
+            <div class="col text-end">
+                <i class="fas fa-dollar-sign"></i>
+                <span class="menu_current_money">0</span>
+            </div>
+        </div>
+    </a>
+
+
+    <!-- modal -->
+    <div class="modal fade" id="menu_formore_modal" tabindex="-1" aria-labelledby="din_ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="menu_modal_header">
+                    <div class="d-flex px-3 pt-3 align-items-center">
+                        <h3 class="fz_16 fw-bold m-0">店家資訊</h3>
+                        <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times-circle text_pink fz_18"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="col menu_shop_content">
+                        <h4 class="menu_shop_name fz_15 fw-bold">品牌名 分店名</h4>
+                        <div class="menu_shop_information_modal scroll_none">
+                            <div class="menu_stars icon_star d-inline-block">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="menu_stars_value">4.8</span>
+                            <span class="menu_stars_total">(35)</span>
+                            <div class="menu_shop_more_content">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-clock text-center"></i> 10:00 ~ 22:15
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone text-center"></i>
+                                        <a href="tel:12345677" class="menu_first_color_text">12345677</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt text-center"></i>
+                                        <a href="map:..." class="menu_first_color_text">地址對付青春，當天至於交流，地理放。</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-dollar-sign text-center"></i> 可現金、LINE PAY
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-money-bill text-center"></i> 現金單筆消費上限 $10000
+                                        <span class="text_pink d-block">
+                                            (非訂餐時間僅提供預訂)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-address-card text-center"></i> 此門市支援專屬姓名貼紙
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="menu_promotion_modal" tabindex="-1" aria-labelledby="din_ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="menu_modal_header">
+                    <div class="d-flex px-3 pt-3 align-items-center">
+                        <h3 class="fz_16 fw-bold m-0">活動與優惠</h3>
+                        <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times-circle text_pink fz_18"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="bg_page p-4">
+                        <h4 class="menu_first_color_text border-bottom">計算包括，實施崇拜。</h4>
+                        <p>走進正確一副規定執行時間如果你你有，硬盤製作讀者一片策劃界面精華先進教育，辦法經驗這個需求不禁文件多種他的這個就會不少，電視劇驚人維護女朋友高中商家現有唱片感覺美元該公司好多，超級家庭外資衝擊，現場舉行電源論壇全部你好眼睛基地分享笑道手術只好街道分公司整。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="menu_mealmethod_modal" tabindex="-1" aria-labelledby="din_ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="menu_modal_header p-3">
+                    <div class="d-flex">
+                        <h3 class="fz_16 fw-bold m-0">用餐方式</h3>
+                        <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times-circle text_pink fz_18"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="p-2">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item menu_takeout">
+                                <h4 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fas fa-hand-holding menu_first_color_text me-2 text-center"></i>
+                                        自取
+                                    </button>
+                                </h4>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg_page py-2">
+                                        <div class="row py-2">
+                                            <p class="my-1">貼圖大幅國務院自己透明，國產上面打擊老。</p>
+                                        </div>
+                                        <div class="row py-2">
+                                            <p class="my-1">
+                                                獎勵抽菸區一台很難沒有任何基隆到了怎麼詢問格式表示打造公主，責任預測指揮，頻率機器研發不喜歡關心多媒體本論壇人們曝光十大，智能兩種參與工廠開關，音樂參與時代增長試題暫無校園前面承諾，意識現有暴力網頁課程加拿大，快樂國有時候收藏導致焦點實業，存款語音，對你。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item menu_delivery">
+                                <h4 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fas fa-motorcycle menu_first_color_text me-2 text-center"></i>
+                                        外送
+                                    </button>
+                                </h4>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg_page py-2">
+                                        <div class="row row-cols-2 py-2">
+                                            <p class="my-1">滿$300</p>
+                                            <p class="my-1">0~5公里</p>
+                                        </div>
+                                        <div class="row row-cols-2 py-2">
+                                            <p class="my-1">滿$500</p>
+                                            <p class="my-1">5公里</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item menu_booking">
+                                <h4 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <i class="fas fa-clipboard menu_first_color_text me-2 text-center"></i>
+                                        訂位
+                                    </button>
+                                </h4>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg_page py-2">
+                                        <div class="row py-2">
+                                            <a href="">訂餐畫面???</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="menu_search_modal" tabindex="-1" aria-labelledby="din_ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="menu_modal_header p-3">
+                    <div class="d-flex">
+                        <h3 class="fz_16 fw-bold m-0">搜尋商品</h3>
+                        <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times-circle text_pink fz_18"></i></button>
+                    </div>
+                    <div class="mt-2 menu_search_input d-flex align-items-center position-relative">
+                        <input type="text" class="w-100 input_noshadow">
+                        <i class="fas fa-search position-absolute fz_17"></i>
+                    </div>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="menu_items">
+                        <ul>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_borad_item p-3">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#menu_item_modal"
+                                    class="row justify-content-between align-items-center">
+                                    <div class="col col-8 d-flex align-items-center">
+                                        <div class="menu_borad_item_img">
+                                            <img src="https://fakeimg.pl/53x40/200" class="h-100">
+                                        </div>
+                                        <p class="col m-0 menu_borad_item_name ms-2 fw-bold">
+                                            名稱名稱
+                                            <span class="badge bg_pink">完售</span>
+                                        </p>
+                                    </div>
+                                    <div class="col col-4 menu_borad_select_show">
+                                        <div class="row justify-content-evenly">
+                                            <span class="col text-center">55</span>
+                                            <span class="col text-center">66</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="menu_group_modal" tabindex="-1" aria-labelledby="din_ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="menu_modal_header p-3">
+                    <div class="d-flex">
+                        <h3 class="fz_16 fw-bold m-0">揪團分享</h3>
+                        <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times-circle text_pink fz_18"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="bg_page p-2">
+                        <div class="menu_group_fig d-flex border-bottom p-3">
+                            <img src="https://fakeimg.pl/150x150/200" class="ms-auto">
+                            <img src="https://fakeimg.pl/160x160/200" class="QRcode me-auto">
+                        </div>
+                        <p class="text-center p-2 m-0 menu_first_color_text fw-bold">
+                            連結分享給其它人，<br>邀請大家加入訂單，一起團購！
+                        </p>
+                    </div>
+                    <input id="menu_web_address" type="text" disabled class="px-2 my-2 w-100" value="http://123">
+                    <button id="menu_copy_address" type="button"
+                        class="py-3 mb-2 text-center menu_second_color_bg w-100 text_white rounded_corner_small">
+                        複製連結
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="menu_item_modal" tabindex="-1" aria-labelledby="din_ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="menu_modal_header p-3">
+                    <div class="d-flex">
+                        <h3 class="fz_16 fw-bold m-0">名稱名稱</h3>
+                        <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times-circle text_pink fz_18"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="mt-2 d-flex align-items-center position-relative">
+                        <input type="text" class="menu_item_modal_input w-100" placeholder="避免使用特殊符號，最多10個字">
+                        <i class="fas fa-user-circle position-absolute text_gray"></i>
+                    </div>
+                    <span class="text_gray d-block text-end">此門市支援專屬姓名貼紙</span>
+
+                    <div id="menu_item_specification" class="menu_item_selection_set_radio mb-3">
+                        <span class="d-block">英式奶茶</span>
+                        <div id="one" class="row row-cols-3" role="group" aria-label="Basic radio toggle button group">
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioOne" id="btnradio1" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio1">Radio
+                                    1</label>
+                            </div>
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioOne" id="btnradio2" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio2">Radio
+                                    2</label>
+                            </div>
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioOne" id="btnradio3" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio3">Radio
+                                    3</label>
+                            </div>
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioOne" id="btnradio4" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio4">Radio
+                                    4</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_item_selection_set_radio mb-3">
+                        <span class="d-block">冰量</span>
+                        <div class="row row-cols-3" role="group" aria-label="Basic radio toggle button group">
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo1" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo1">Radio
+                                    1</label>
+                            </div>
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo2" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo2">Radio
+                                    2</label>
+                            </div>
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo3" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo3">Radio
+                                    3</label>
+                            </div>
+                            <div class="col my-2">
+                                <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo4" autocomplete="off"
+                                    checked>
+                                <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo4">Radio
+                                    4</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_item_selection_set_checkbox">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <h2 id="panelsStayOpen-headingOne">
+                                <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    牛奶
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-0">
+                                    <div class="row row-cols-3" role="group"
+                                        aria-label="Basic checkbox toggle button group">
+                                        <div class="col my-2">
+                                            <input type="checkbox" class="btn-check" id="btncheckOne1" autocomplete="off">
+                                            <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                for="btncheckOne1">Checkbox 1</label>
+                                        </div>
+                                        <div class="col my-2">
+                                            <input type="checkbox" class="btn-check" id="btncheckOne2" autocomplete="off">
+                                            <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                for="btncheckOne2">Checkbox 2</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_item_selection_set_checkbox">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <h2 id="panelsStayOpen-headingOne">
+                                <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    茶包
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-0">
+                                    <div class="row row-cols-3" role="group"
+                                        aria-label="Basic checkbox toggle button group">
+                                        <div class="col my-2">
+                                            <input type="checkbox" class="btn-check" id="btncheckTwo1" autocomplete="off">
+                                            <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                for="btncheckTwo1">Checkbox 1</label>
+                                        </div>
+                                        <div class="col my-2">
+                                            <input type="checkbox" class="btn-check" id="btncheckTwo2" autocomplete="off">
+                                            <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                for="btncheckTwo2">Checkbox 2</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_modal_footer p-3 border-top">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <span>總金額：</span><span class="menu_modal_dollar">00</span><span>元</span>
+                            <div class="input-group">
+                                <button class="btn btn-outline-dark input_noshadow" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">-</button>
+                                <input type="text" class="form-control input_noshadow"
+                                    aria-label="Text input with 2 dropdown buttons" value="1">
+                                <button class="btn btn-outline-dark" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">+</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="submit"
+                                class="py-2 fw-bold text-center menu_second_color_bg text_white w-100 h-100 rounded_corner_small"
+                                value="加入購物車">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".menu_fig_swiper", {
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".menu_nav_swiper", {
+            slidesPerView: 3.5,
+            spaceBetween: 0,
+        });
+    </script>
+
+    <!-- scroll監聽與nav的fixed設定 -->
+    <script>
+        window.addEventListener('scroll', stickyNav)
+
+        const main = document.querySelector('.menu_main')
+        // const banner = document.querySelector('.menu_banner')
+        // const abstract = document.querySelector('.menu_abstract')
+        const topOfMain = main.offsetTop
+
+        const nav = document.querySelector('.menu_nav')
+
+        function stickyNav() {
+            if (window.scrollY >= topOfMain) {
+                nav.classList.add('menu_nav_fixed')
+                main.classList.add('menu_nav_fixed_padding')
+            }
+            else {
+                nav.classList.remove('menu_nav_fixed')
+                main.classList.remove('menu_nav_fixed_padding')
+            }
+        }
+    </script>
+
+    <!-- 判斷menu_borad填入的menu_main_col -->
+    <script>
+        //比較menu_main_col中menu_borad的offsetHeight的總和，選最小的填入
+        const cols = document.querySelectorAll('.menu_main_col')
+        const menuBoradTemp = document.querySelector('#menu_borad_temp')
+        const menuItemTemp = document.querySelector('#menu_item_temp')
+
+        //測試用
+        let firstColHeight = 2
+        let secondColHeight = 3
+        let thirdColHieght = 1
+        let colHeights = [firstColHeight, secondColHeight, thirdColHieght]
+
+        function CalculateColHeight() {
+            cols.forEach((col, idx) => {
+                col.querySelectorAll('.menu_borad').forEach(board => {
+                    colHeights[idx] += board.offsetHeight
+                })
+            })
+        }
+
+        function InsertItem() {
+            let board = menuBoradTemp.content.cloneNode(true)
+
+            // 設定資料內容
+            board.querySelector('h2').innerText = '分類分類'
+
+            //todo: 等資料結構確定後，以分類作foreach以加入item
+            let item = menuItemTemp.content.cloneNode(true)
+            board.querySelector('ul').append(item)
+
+            return board
+        }
+
+        function InsertBorad() {
+            //找到目前最短的col
+            CalculateColHeight()
+            let sortColHeights = [...colHeights]
+            let min = sortColHeights.sort()[0]
+            let idxOfMin = colHeights.indexOf(min)
+
+            //插入board
+            let board = InsertItem()
+            cols[idxOfMin].append(board)
+        }
+
+        window.onload = function () {
+            //todo: 以分類為單位，foreach執行InsertBorad
+            InsertBorad()
+        }
+
+    </script>
+</body>
+
+</html>
