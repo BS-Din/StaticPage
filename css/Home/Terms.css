@@ -1,0 +1,8 @@
+.term_container{
+    width: 90%;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.term{
+    padding: 16px 16px;
+}
