@@ -39,11 +39,9 @@
     font-size: 15px;
 }    
 /* 品牌介紹*/
-.brand_introduce_fb,
-.brand_introduce_ig,
-.brand_introduce_line{
-    width: 15%;
-    border-radius: 5px;
+.brand_introduce_mediapic{
+    width: 90%;
+    border-radius: 8px;
 }
 .brand_introduce_icontext{
     font-size: 10px;
