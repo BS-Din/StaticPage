@@ -211,6 +211,21 @@ section{
         left: 0;
         right: 0;
     }
+    .order_details_page_reorder_forPhone{
+        position: absolute;
+        /* z-index: 3; */
+        /* top: 50px;
+        width: 100vw; */
+        right: 0;
+        left: 0;
+        
+    }
+    .order_details_page_reorder{
+        display: none;
+    }
+    /* .order_details_page{
+        z-index: 0;
+    } */
     
 }
 @media screen and (min-width: 576px) {
@@ -232,7 +247,13 @@ section{
         border-right: none;
     }
 
-    
+    .order_details_page_reorder{
+        width: 25%;
+        margin: 10px auto;
+    }
+    .order_details_page_reorder_forPhone{
+        display: none;
+    }
 }
 @media screen and (min-width: 992px) {
     p.order_detail_card_label{
@@ -250,5 +271,11 @@ section{
         left: 0;
         right: 0;
     }
-    
+    .order_details_page_reorder{
+        width: 25%;
+        margin: 10px auto;
+    }
+    .order_details_page_reorder_forPhone{
+        display: none;
+    }
 }
