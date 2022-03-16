@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/_settings.css">
+    <link rel="stylesheet" href="../../css/Store/menu.css">
+    <link rel="stylesheet" href="../../css/Cart/cart_order.css">
+    <title>cart details</title>
+</head>
+
+<body class="bg_page">
+
+    <section>
+        <div class="container my-2">
+            <div class="row justify-content-center">
+                <div class="col-1"></div>
+                <div class="col-10 col-sm-10 col-lg-8">
+                    <div class="row position-relative">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <span
+                                        class="d-inline-block cartDetails_step_num text_white d-flex justify-content-center align-items-center">
+                                        <div class="cartDetails_step_numtxt fw-bold">
+                                            1
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <p class="text_blue">確認明細</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="d-inline-block w-25 position-absolute cart_detail_hr" style="top: 25%; left: 20.5%;">
+
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <span
+                                        class="d-inline-block cartDetails_step_num text_white d-flex justify-content-center align-items-center">
+                                        <div class="cartDetails_step_numtxt fw-bold">
+                                            2
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <p class="text_blue">選擇付款</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="d-inline-block w-25 position-absolute cart_detail_hr"
+                            style="top: 25%; right: 20.5%;">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <span
+                                        class="d-inline-block cartDetails_step_num text_white d-flex justify-content-center align-items-center">
+                                        <div class="cartDetails_step_numtxt fw-bold">
+                                            3
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <p class="text_blue">確認結帳</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body">
+                            <div class="row py-2 px-3">
+                                <div class="col-8 col-sm-8 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-12 mt-2 ">
+                                            <h3 class="cart_detail_brandTxt fw-bold text_blue">{{茶永春 萬華寶興店}}</h3>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h3 class="">{{02-23398006}}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-4 col-lg-4 d-flex align-items-center">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#menu_group_modal"
+                                        class="btn bg_blue cart_groupbuy_button p-0 rounded-3 ms-auto">
+                                        <img class="" src="../../img/Cart/揪團按紐.svg" alt="揪團按紐">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+            <div class="modal fade" id="menu_group_modal" tabindex="-1" aria-labelledby="din_ModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="menu_modal_header p-3">
+                            <div class="d-flex">
+                                <h3 class="fz_16 fw-bold m-0">揪團分享</h3>
+                                <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                        class="fas fa-times-circle text_pink fz_18"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-body pt-0">
+                            <div class="bg_page p-2">
+                                <div class="menu_group_fig d-flex border-bottom p-3">
+                                    <img src="https://fakeimg.pl/150x150/200" class="ms-auto">
+                                    <img src="https://fakeimg.pl/160x160/200" class="QRcode me-auto">
+                                </div>
+                                <p class="text-center p-2 m-0 text_blue fw-bold">
+                                    連結分享給其它人，<br>邀請大家加入訂單，一起團購！
+                                </p>
+                            </div>
+                            <input type="text" disabled class="p-2 my-2 w-100" value="http://123">
+                            <button type="button"
+                                class="py-3 mb-2 text-center bg_pink w-100 text_white rounded-2 fz_16 fw-bold">
+                                複製連結
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body">
+                            <div class="row py-2 px-3">
+                                <div class="col-12 ">
+                                    <h4 class="fz_16 fw-bolder">取餐方式</h4>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault-take"
+                                            id="flexRadioDefault-take">
+                                        <label class="form-check-label" for="flexRadioDefault-take">
+                                            自取 (約{{20}}分鐘)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2 position-relative">
+                                    <h6 class="cart_details_inputTxt">請確認取貨門市位置，點選地圖查看</h6>
+                                    <div class="input-group my-2">
+                                        <input type="text"
+                                            class="form-control cart_details_mapInput input_noshadow py-3"
+                                            aria-label="">
+                                        <a href="#" class="input-group-text cart_details_map">
+                                            <i class="fas fa-map-marker-alt fz_18 text_blue"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault-take"
+                                            id="flexRadioDefault-delivery">
+                                        <label class="form-check-label" for="flexRadioDefault-delivery">
+                                            外送 (約{{30~60}}分鐘)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <h4 class="fz_16 fw-bolder">預計取餐時間</h4>
+                                </div>
+                                <div class="col-12 my-2 position-relative">
+                                    <button class="w-100" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#order_time_modal">
+                                        <h6 class="cart_details_inputTxt">取餐時間會依門市現場狀況調整</h6>
+                                        <div class="input-group my-2">
+                                            <input type="text"
+                                                class="form-control cart_details_mapInput input_noshadow py-3 bg_white"
+                                                value="" aria-label="Disabled input" disabled readonly>
+                                            <div class="input-group-text cart_details_map">
+                                                <i class="fas fa-angle-right fz_18 text_blue"></i>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+            <div class="modal fade" id="order_time_modal" tabindex="-1" aria-labelledby="din_ModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="menu_modal_header p-3">
+                            <div class="d-flex">
+                                <h3 class="fz_16 fw-bold m-0">
+                                    <i class="fas fa-asterisk text_pink"></i>
+                                    預計取餐時間
+                                </h3>
+                                <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                        class="fas fa-times-circle text_pink fz_18"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-body pt-0">
+                            <div class="input-group date my-2">
+                                <label for="startDate"></label>
+                                <input id="startDate" type="date"
+                                    class="form-control input_noshadow py-3 bg_white" >
+                            </div>
+                            <div class="input-group date mt-2 mb-5">
+                                <label for="startTime"></label>
+                                <input id="startTime" type="time"
+                                    class="form-control input_noshadow py-3 bg_white" >
+                            </div>
+                            <div class="bg_lightpink p-2 rounded-3 my-2 d-flex">
+                                <p class="d-inline-block mb-0">
+                                    <i class="d-inline-block fas fa-exclamation-circle text_pink me-2 "></i>
+                                    預計取餐時間會依門市狀況調整，請在送單後再次確認，並保持電話暢通避免溝通延誤，謝謝
+                                </p>
+                            </div>
+                            <button type="button"
+                                class="py-3 mb-2 text-center bg_pink w-100 text_white rounded-2 fz_16 fw-bold">
+                                儲存
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body">
+                            <div class="row py-2 px-3">
+                                <div class="col-12">
+                                    <h4 class="fz_16 fw-bolder">購物內容</h4>
+                                </div>
+                            </div>
+                            <div class="row py-2 px-3">
+                                <div class="col-1 col-sm-1 col-lg-1 p-0 d-flex my-2">
+                                    <img class="w-100 rounded-circle m-auto cart_detail_brandLogo" src="../../img/Cart/迷克夏logo.png"
+                                        alt="memberImg">
+                                </div>
+                                <div class="col-6 col-sm-6 col-lg-6 d-flex align-items-center">
+                                    <h6 class="fw-bold">{{molly huang}}</h6>
+                                </div>
+                                <div
+                                    class="col-5 col-sm-5 col-lg-5 d-flex align-items-center justify-content-center position-relative">
+                                    <h6 class="ms-auto">${{}}元/{{}}份</h6>
+                                    <button>
+                                        <i class=" fas fa-angle-up"></i>
+                                    </button>
+                                </div>
+                                <div class="col-12 bg_page rounded-3">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6 col-lg-6">
+                                            <h6 class="fw-bold py-3">{{桂花蜜茶}}</h6>
+                                        </div>
+                                        <div class="col-2 col-sm-2 col-lg-4"></div>
+                                        <div class="col-2 col-sm-2 col-lg-1 text-center d-flex">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#edit_menu_modal">
+                                                <i class="btn m-auto  fas fa-pen fz_18 text_blue " value ="edit"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-2 col-sm-2 col-lg-1 text-center d-flex" value ="delete">
+                                            <i class="btn m-auto fas fa-trash fz_18 "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal -->
+                                <div class="modal fade" id="edit_menu_modal" tabindex="-1" aria-labelledby="din_ModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="menu_modal_header p-3">
+                                                <div class="d-flex">
+                                                    <h3 class="fz_16 fw-bold m-0">名稱名稱</h3>
+                                                    <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i
+                                                            class="fas fa-times-circle text_pink fz_18"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body pt-0">
+                                                <div class="mt-2 d-flex align-items-center position-relative">
+                                                    <input type="text" class="menu_item_modal_input w-100" placeholder="避免使用特殊符號，最多10個字">
+                                                    <i class="fas fa-user-circle position-absolute text_gray"></i>
+                                                </div>
+                                                <span class="text_gray d-block text-end">此門市支援專屬姓名貼紙</span>
+                            
+                                                <div id="menu_item_specification" class="menu_item_selection_set_radio mb-3">
+                                                    <span class="d-block">英式奶茶</span>
+                                                    <div id="one" class="row row-cols-3" role="group" aria-label="Basic radio toggle button group">
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioOne" id="btnradio1" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio1">Radio
+                                                                1</label>
+                                                        </div>
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioOne" id="btnradio2" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio2">Radio
+                                                                2</label>
+                                                        </div>
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioOne" id="btnradio3" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio3">Radio
+                                                                3</label>
+                                                        </div>
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioOne" id="btnradio4" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradio4">Radio
+                                                                4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="menu_item_selection_set_radio mb-3">
+                                                    <span class="d-block">冰量</span>
+                                                    <div class="row row-cols-3" role="group" aria-label="Basic radio toggle button group">
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo1" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo1">Radio
+                                                                1</label>
+                                                        </div>
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo2" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo2">Radio
+                                                                2</label>
+                                                        </div>
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo3" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo3">Radio
+                                                                3</label>
+                                                        </div>
+                                                        <div class="col my-2">
+                                                            <input type="radio" class="btn-check" name="btnradioTwo" id="btnradioTwo4" autocomplete="off"
+                                                                checked>
+                                                            <label class="btn menu_first_color_bg rounded_corner w-100" for="btnradioTwo4">Radio
+                                                                4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="menu_item_selection_set_checkbox">
+                                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                        <h2 id="panelsStayOpen-headingOne">
+                                                            <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                                aria-controls="panelsStayOpen-collapseOne">
+                                                                牛奶
+                                                            </button>
+                                                        </h2>
+                                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                                            aria-labelledby="panelsStayOpen-headingOne">
+                                                            <div class="accordion-body p-0">
+                                                                <div class="row row-cols-3" role="group"
+                                                                    aria-label="Basic checkbox toggle button group">
+                                                                    <div class="col my-2">
+                                                                        <input type="checkbox" class="btn-check" id="btncheckOne1" autocomplete="off">
+                                                                        <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                                            for="btncheckOne1">Checkbox 1</label>
+                                                                    </div>
+                                                                    <div class="col my-2">
+                                                                        <input type="checkbox" class="btn-check" id="btncheckOne2" autocomplete="off">
+                                                                        <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                                            for="btncheckOne2">Checkbox 2</label>
+                                                                    </div>
+                            
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="menu_item_selection_set_checkbox">
+                                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                        <h2 id="panelsStayOpen-headingOne">
+                                                            <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                                                aria-controls="panelsStayOpen-collapseOne">
+                                                                茶包
+                                                            </button>
+                                                        </h2>
+                                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                                            aria-labelledby="panelsStayOpen-headingOne">
+                                                            <div class="accordion-body p-0">
+                                                                <div class="row row-cols-3" role="group"
+                                                                    aria-label="Basic checkbox toggle button group">
+                                                                    <div class="col my-2">
+                                                                        <input type="checkbox" class="btn-check" id="btncheckTwo1" autocomplete="off">
+                                                                        <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                                            for="btncheckTwo1">Checkbox 1</label>
+                                                                    </div>
+                                                                    <div class="col my-2">
+                                                                        <input type="checkbox" class="btn-check" id="btncheckTwo2" autocomplete="off">
+                                                                        <label class="btn menu_first_color_bg w-100 rounded_corner"
+                                                                            for="btncheckTwo2">Checkbox 2</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="menu_modal_footer p-3 border-top">
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <span>總金額：</span><span class="menu_modal_dollar">00</span><span>元</span>
+                                                        <div class="input-group">
+                                                            <button class="btn btn-outline-dark input_noshadow" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">-</button>
+                                                            <input type="text" class="form-control input_noshadow"
+                                                                aria-label="Text input with 2 dropdown buttons" value="1">
+                                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="submit"
+                                                            class="py-2 fw-bold text-center menu_second_color_bg text_white w-100 h-100 rounded_corner_small"
+                                                            value="加入購物車">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body">
+                            <div class="row py-2 px-3">
+                                <div class="col-12 ">
+                                    <h4 class="fz_16 fw-bolder">折扣優惠</h4>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-check d-flex">
+                                        <input class="form-check-input my-auto" type="checkbox" value=""
+                                            id="flexRadioDefault-discount">
+                                        <label class="form-check-label ms-2" for="flexRadioDefault-discount">
+                                            折價券
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control input_noshadow py-3"
+                                                placeholder="無可用折價券" aria-label="" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body">
+                            <div class="row py-2 px-3">
+                                <div class="col-4 py-2">
+                                    <h4 class="fz_16 fw-bolder d-inline-block">活動</h4>
+                                </div>
+                                <div class="col-8 d-flex justify-content-end">
+                                    <h6 class="d-inline-block text_disable_checkbox py-2">單筆訂單僅會參與一檔活動</h6>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="accordion accordion-flush" id="accordion">
+                                        <div class="accordion-item ">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button
+                                                    class="accordion-button collapsed cart_details_activity rounded-3"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                    aria-controls="flush-collapseOne">
+                                                    <span
+                                                        class="badge bg_state_success d-inline-block px-3 me-3">參加</span>
+                                                    <p class="my-0 d-inline-block">茶詠春開幕慶，自取滿150元享88折優惠</p>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne" data-bs-parent="#accordion">
+                                                <div class="accordion-body">3/1~3/18 茶詠春開幕慶，自取滿150元享88折優惠。
+                                                    茶詠春擁有做最後說明調整的權利。你訂線上訂餐專屬優惠，此優惠不與其他優惠折扣併用。
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item ">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button
+                                                    class="accordion-button collapsed cart_details_activity rounded-3"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                    aria-controls="flush-collapseTwo">
+                                                    <span class="badge bg_pink d-inline-block px-3 me-3 ">參加</span>
+                                                    <p class="my-0 d-inline-block">茶詠春開幕慶</p>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">3/1~3/18 茶詠春開幕慶，自取滿150元享88折優惠。
+                                                    茶詠春擁有做最後說明調整的權利。你訂線上訂餐專屬優惠，此優惠不與其他優惠折扣併用。
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body">
+                            <div class="row py-2 px-3">
+                                <div class="col-12 ">
+                                    <h4 class="fz_16 fw-bolder">塑膠袋</h4>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <h5 class="d-inline-block fz_15 py-2">是否需要塑膠袋</h5>
+                                    <div class="form-check form-switch d-inline-block">
+                                        <input class="form-check-input fz_16 input_noshadow cart_details_checkbox"
+                                            type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <h5 class="text_gray">
+                                        依據政策規定，即日起需自行購買塑膠袋並支付相關費用，份數較多的訂單請斟酌加購
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="card rounded-1">
+                        <div class="card-body pb-0">
+                            <div class="row py-2 px-3">
+                                <div class="col-12  ">
+                                    <h4 class="fz_16 fw-bolder cart_details_border pb-3">訂單匯總</h4>
+                                </div>
+                                <div class="col-12 my-2 d-flex justify-content-between">
+                                    <p class="d-inline-block">商品 x9</p>
+                                    <p class="d-inline-block">$360</p>
+                                </div>
+                                <div class="col-12 mb-2 d-flex justify-content-between cart_details_border">
+                                    <p class="d-inline-block">活動折扣</p>
+                                    <p class="d-inline-block text_pink">-$43</p>
+                                </div>
+                                <div class="col-12 mt-2 d-flex justify-content-between">
+                                    <p class="d-inline-block text_pink fw-bold">應付金額</p>
+                                    <p class="d-inline-block text_pink fw-bold">$317</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-2">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="row">
+                        <div class="col-6 pe-0">
+                            <button type="button"
+                                class="w-100 bg_white rounded-2 py-3 fw-bold input_noshadow">繼續加購</button>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <button type="button"
+                                class="w-100 bg_pink rounded-2 py-3 text_white fw-bold cart_details_nextBtn input_noshadow">下一步</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
