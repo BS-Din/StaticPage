@@ -97,6 +97,9 @@
     border: 0.5px solid rgba(0, 0, 0, 0.513);
     height: 40px;
 }
+.searchzone_finddistrict_dropdown-menu{
+    width: 41%;
+}
 .searchzone_finddistrict_dropdown_btn:hover,
 .searchzone_finddistrict_imput input:hover{
     border: 0.5px solid black;
