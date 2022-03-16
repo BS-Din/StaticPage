@@ -40,7 +40,8 @@
 }    
 /* 品牌介紹*/
 .brand_introduce_mediapic{
-    width: 90%;
+    width: 30px;
+    height: 30px;
     border-radius: 8px;
 }
 .brand_introduce_icontext{
