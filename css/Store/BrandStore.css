@@ -55,6 +55,9 @@
     height: 300px;
 }
 /* 附近推薦店家 */
+.brand_recommend_text{
+    padding: 0px 5px 0px 15px;
+}
 .brand_recommend_errorpic{
     width: 53%;
 }
@@ -158,6 +161,9 @@
         border-radius: 0px 0px 5px 5px;
     }
     /* 附近推薦店家 */
+    .brand_recommend_text{
+        padding: 0px;
+    }
     .brand_recommend_errorpic{
         width: 30%;
     }
@@ -189,6 +195,9 @@
         width: 95%;
     }
     /* 附近推薦店家 */
+    .brand_recommend_text{
+        padding: 0px;
+    }
     .brand_recommend_title{
         font-size: 30px;
     }
