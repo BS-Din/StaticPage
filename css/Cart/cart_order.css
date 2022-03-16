@@ -104,12 +104,9 @@ hr {
     border-bottom: 1px solid var(--din-text-disable-input);
     border-bottom-style: dashed;
     
-    
 }
 
-.cart_details_border > .row{
-    margin-bottom: 13px;
-}
+
 .cart_details_map{
     background-color: var(--din-main-white);
     text-decoration: none;
