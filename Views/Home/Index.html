@@ -16,7 +16,7 @@
     </head>
     <body>
         <!-- 搜尋區塊 -->
-        <section class="container">
+        <section class="container-xl">
             <div class="row mb-4">
                 <!-- Swiper -->
                 <div class="swiper mySwiper col-12 col-sm-12 col-lg-8">
@@ -62,7 +62,7 @@
             </div>
         </section>
         <!-- 廣告區域 -->
-        <section class="container outer-container px-sm-0">
+        <section class="container-xl outer-container px-sm-0">
             <div class="inner-container d-flex justify-content-center">
                 <div class="content row flex-nowrap">
                     <a href="#" class="col-8 col-lg-4">
@@ -174,27 +174,28 @@
         </div>
 
         <!-- 附近推薦店家 -->
-        <section class="container px-sm-0">
-            <div class="d-flex justify-content-between align-items-center pt-3  pt-sm-5 pb-sm-3">
-                <h2 class="brand_recommend_title fw-bold text_blue mb-0">附近推薦店家</h2>
-                <a href="#" class="brand_recommend_more">查看更多&nbsp;<i class="far fa-arrow-alt-circle-right"></i></a>
-            </div>
+        <section class="container-xl mt-5">
+            <!-- 附近推薦店家 -->
+            <div class="row px-sm-0 justify-content-center">
+                <div class="brand_recommend_text col-12 d-flex justify-content-between align-items-baseline mb-5">
+                    <h2 class="brand_recommend_title fw-bold text_blue">附近推薦店家</h2>
+                    <p type="button" class="brand_recommend_more">查看更多&nbsp;<i class="far fa-arrow-alt-circle-right"></i></p>
+                </div>
                 <!-- 狀況一:未開定位 -->
                 <!-- <div class="brand_recommend_errorpic col-12 mx-auto mb-3">
-                    <img src="https://cdn-order.nidin.shop/nidin2/img/din_error.b143490c.svg" alt="">
+                    <img src="/img/PartialView/recommend_errorpic(1).svg" alt="">
                 </div>
                 <div class="col-12">
                     <h5 class="brand_recommend_errortext text-center fw-bold">無法確定你的位置，請開啟定位功能或找區域搜尋！</h5>
                 </div> -->
                 <!-- 狀況二:找不到符合條件的門市 -->
                 <!-- <div class="brand_recommend_errorpic col-12 mb-3 mx-auto">
-                    <img src="https://cdn-order.nidin.shop/nidin2/img/din_store_empty.51ee1a8b.svg" alt="">
+                    <img src="/img/PartialView/recommend_errorpic(2).svg" alt="">
                 </div>
                 <div class="col-12">
                     <h5 class="brand_recommend_errortext text-center fw-bold">Sorry！我們找不到符合條件的門市</h5>
                 </div> -->
                 <!-- 放品牌卡片 -->
-            <div class="row justify-content-center">
                 <div class="row p-0">
                     <div class="col-12 col-sm-6 col-lg-4 p-3">
                         <a href="#" class="card border-0">
@@ -209,20 +210,22 @@
                                     <button class="btn p-0 mb-auto"><i class="fas fa-heart fs-1 text-danger"></i></button>
                                 </div>
                                 <div>
-                                    <span class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold">11:00 ~ 21:00</span>
-                                    <span class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold">0.3 公里</span>
-                                    <div class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold"><i class="fas fa-star icon_star "></i> <span>4.9</span></div>
+                                    <span class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold shopcard_tag">11:00 ~
+                                        21:00</span>
+                                    <span class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold shopcard_tag">0.3 公里</span>
+                                    <div class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold"><i
+                                            class="fas fa-star icon_star shopcard_tag "></i> <span class=" shopcard_tag">4.9</span></div>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-auto pt-3 pb-2 text_card ">
                                         <p class="d-inline">
-                                        台北市中正區忠孝東路一段11號 </p>
+                                            台北市中正區忠孝東路一段11號 </p>
                                     </div>
                                     <div class="mt-auto p-2">
-                                        <img src="/img/Home/drink.svg" class="card_category">
+                                        <img src="../../img/PartialView/drink.svg" class="card_category">
                                     </div>
                                     <div class="mt-auto p-2">
-                                        <img src="/img/Home/free.svg" class="card_category">
+                                        <img src="../../img/PartialView/free.svg" class="card_category">
                                     </div>
                                 </div>
                             </div>
@@ -241,20 +244,22 @@
                                     <button class="btn p-0 mb-auto"><i class="fas fa-heart fs-1 text-danger"></i></button>
                                 </div>
                                 <div>
-                                    <span class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold">11:00 ~ 21:00</span>
-                                    <span class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold">0.3 公里</span>
-                                    <div class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold"><i class="fas fa-star icon_star "></i> <span>4.9</span></div>
+                                    <span class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold shopcard_tag">11:00 ~
+                                        21:00</span>
+                                    <span class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold shopcard_tag">0.3 公里</span>
+                                    <div class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold"><i
+                                            class="fas fa-star icon_star shopcard_tag "></i> <span class=" shopcard_tag">4.9</span></div>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-auto pt-3 pb-2 text_card ">
                                         <p class="d-inline">
-                                        台北市中正區忠孝東路一段11號 </p>
+                                            台北市中正區忠孝東路一段11號 </p>
                                     </div>
                                     <div class="mt-auto p-2">
-                                        <img src="/img/Home/drink.svg" class="card_category">
+                                        <img src="../../img/PartialView/drink.svg" class="card_category">
                                     </div>
                                     <div class="mt-auto p-2">
-                                        <img src="/img/Home/free.svg" class="card_category">
+                                        <img src="../../img/PartialView/free.svg" class="card_category">
                                     </div>
                                 </div>
                             </div>
@@ -273,20 +278,22 @@
                                     <button class="btn p-0 mb-auto"><i class="fas fa-heart fs-1 text-danger"></i></button>
                                 </div>
                                 <div>
-                                    <span class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold">11:00 ~ 21:00</span>
-                                    <span class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold">0.3 公里</span>
-                                    <div class="text_card bg_card_tag rounded-3 p-1 me-2 d-inline-block fw-bold"><i class="fas fa-star icon_star "></i> <span>4.9</span></div>
+                                    <span class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold shopcard_tag">11:00 ~
+                                        21:00</span>
+                                    <span class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold shopcard_tag">0.3 公里</span>
+                                    <div class="text_card bg_card_tag rounded-3 p-1 d-inline-block fw-bold"><i
+                                            class="fas fa-star icon_star shopcard_tag "></i> <span class=" shopcard_tag">4.9</span></div>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-auto pt-3 pb-2 text_card ">
                                         <p class="d-inline">
-                                        台北市中正區忠孝東路一段11號 </p>
+                                            台北市中正區忠孝東路一段11號 </p>
                                     </div>
                                     <div class="mt-auto p-2">
-                                        <img src="/img/Home/drink.svg" class="card_category">
+                                        <img src="../../img/PartialView/drink.svg" class="card_category">
                                     </div>
                                     <div class="mt-auto p-2">
-                                        <img src="/img/Home/free.svg" class="card_category">
+                                        <img src="../../img/PartialView/free.svg" class="card_category">
                                     </div>
                                 </div>
                             </div>
@@ -297,7 +304,7 @@
         </section>
 
         <!-- 教學 -->
-        <section class="home_teach container py-lg-4 px-lg-0">
+        <section class="home_teach container-xl py-lg-4 px-lg-0">
             <div class="row">
                 <a href="#" class="col-lg-6">
                     <img class="w-100 rounded-3 border border-1 border-light shadow-sm" src="/img/Home/home_how.jpg" alt="新手教學">
