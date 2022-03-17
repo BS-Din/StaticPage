@@ -180,9 +180,6 @@ hr {
 .accordion-button::after{
     margin-left: auto;
 }
-section{
-    height: 100vh;
-}
 
 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
     margin-left: -1px;
@@ -212,20 +209,15 @@ section{
         right: 0;
     }
     .order_details_page_reorder_forPhone{
-        position: absolute;
-        /* z-index: 3; */
-        /* top: 50px;
-        width: 100vw; */
-        right: 0;
-        left: 0;
+        position: fixed;
+        z-index: 3;
+        bottom: 0;
+        width: 100%;
         
     }
     .order_details_page_reorder{
         display: none;
     }
-    /* .order_details_page{
-        z-index: 0;
-    } */
     
 }
 @media screen and (min-width: 576px) {
