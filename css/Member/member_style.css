@@ -146,7 +146,7 @@ a:hover{
         width: 50%;
     }
     .member_block_m{
-        min-width: 650px;
+        min-width: 580px;
     }
 }
 @media screen and (min-width: 992px){
