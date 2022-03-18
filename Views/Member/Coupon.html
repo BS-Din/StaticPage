@@ -74,18 +74,61 @@
                                 </nav>
                             </div>
                         </nav>
-                        <div class="row g-2 mb-3">
-                            <div class="col-md">
-                                <div class="col-md">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                            <option selected>全部</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        <label for="floatingSelectGrid">品牌</label>
+                        <div class="row g-2 align-items-center hide-in-ads mb-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label">品牌</label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                            <option selected>全部</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="col-6">
+                                        <div class="col-auto">
+                                            <label for="inputPassword6" class="col-form-label">狀態</label>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                            <option selected>全部</option>
+                                                            <option value="1">可使用</option>
+                                                            <option value="2">轉贈紀錄</option>
+                                                            <option value="3">歷史紀錄</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-12 mb-3 display-in-mobile">
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                        <option selected>全部</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md">
@@ -96,21 +139,25 @@
                                         <option value="2">轉贈紀錄</option>
                                         <option value="3">歷史紀錄</option>
                                     </select>
-                                    <label for="floatingSelectGrid">狀態</label>
                                 </div>
                             </div>
                         </div>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-discount-tab" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="true">折價券與單品折扣券</button>
-                            <button class="nav-link" id="nav-voucher-tab" data-bs-toggle="tab" data-bs-target="#nav-voucher" type="button" role="tab" aria-controls="nav-voucher" aria-selected="false">商品券</button>
-                            <!-- <button class="btn btn-primary mb-2" id="nav-discount-tab" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="true">折價券轉贈</button>
-                            <button class="btn btn-primary  mb-2" id="nav-discount-tab" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="false">商品券</button> -->
+                            <button class="nav-link active" tabindex="0" id="nav-discount-tab" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="true">折價券與單品折扣券</button>
+                            <button class="nav-link" tabindex="-1" id="nav-voucher-tab" data-bs-toggle="tab" data-bs-target="#nav-voucher" type="button" role="tab" aria-controls="nav-voucher" aria-selected="false">商品券</button>
+                            <div class=" d-grid gap-2 d-md-flex justify-content-md-end align-content-end mb-2" >
+                                <button class="hide-in-ads btn btn-primary me-md-2 show active" tabindex="0" id="nav-discount-btn" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="true">折價券轉贈</button>
+                                <button class="hide-in-ads btn btn-primary show" tabindex="-1" id="nav-voucher-tab" data-bs-toggle="tab" data-bs-target="#nav-voucher" type="button" role="tab" aria-controls="nav-voucher" aria-selected="false">商品券</button>
+                            </div>
                         </div>
                     </nav>
                     <div class="col-md-auto tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-discount" role="tabpanel" aria-labelledby="nav-discount-tab">
+                        <div class="tab-pane fade show active"tabindex="-1"  id="nav-discount" role="tabpanel" aria-labelledby="nav-discount-tab">
                             <span class="text-muted">使用折價券消費之商品如經取消或銷退者，折價券視同已使用，恕不得要求保留或轉換為現金， 折價券恕不找零，請於有效期限內使用折價券，逾期視同自動作廢，不得申請補發。 品牌/門市擁有做最後說明調整的權利。</span>
-                            <div class="container my-5 col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal" id="tab">
+                            <div class=" d-grid gap-2 d-md-flex justify-content-md-center align-content-center mb-2 mt-2">
+                                <button class="display-in-mobile btn btn-primary me-md-2" id="nav-discount-tab" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="true">折價券轉贈</button>
+                            </div>
+                            <div class="container my-3 col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal" id="tab">
                                 <div class="row">
                                     <div class="col-sm-6 mt-3">
                                         <div class="btn bg-white rounded mb-3 d-flex justify-content-between"   id="coupon">
@@ -133,14 +180,18 @@
                                             </div>
                                         </div>
                                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class=" row modal-dialog">
+                                            <div class="modal-dialog">
                                                 <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title m-auto" id="exampleModalLabel">
-                                                            <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
-                                                            Modal title
-                                                        </h5>
-                                                        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <div class="col">
+                                                        <div class="modal-header">
+                                                            <div class="m-auto text-center">
+                                                                <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
+                                                                <h5 class="modal-title " id="exampleModalLabel">Modal title</h5>
+                                                                <span class="badge bg-secondary">Valid</span>
+                                                                <span class="badge bg-secondary">Valid</span>
+                                                            </div>
+                                                            <button type="button" class="btn btn-outline-danger btn-close ms-0 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
                                                     </div>
                                                 <div class="modal-body">
                                                     <p>
@@ -163,9 +214,10 @@
                                                         可用門市:
                                                     </p>
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary m-auto" data-bs-dismiss="modal">Close</button>
-                                                    
+                                                <div class=" modal-footer">
+                                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                                        <a type="button" class="btn btn-secondary m-auto" data-bs-dismiss="modal" href="#">趕緊來用</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                             </div>
@@ -174,7 +226,7 @@
                                     <div class="col-sm-6 mt-3">
                                         <div class="btn bg-white rounded mb-3 d-flex justify-content-between"   id="coupon">
                                             <div class="kiri p-3">
-                                                <div class="info icon-container ">
+                                                <div class="info icon-container align-content-center">
                                                     <div class="icon-container_box">
                                                         <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
                                                         <p class="text-center mt-2">$40</p>
@@ -251,7 +303,7 @@
                                         <div class="btn bg-white rounded mb-3 d-flex justify-content-between"   id="coupon">
                                             <div class="kiri p-3">
                                                 <div class="info icon-container ">
-                                                    <div class="icon-container_box">
+                                                    <div class="icon-container_box m-auto">
                                                         <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
                                                         <p class="text-center mt-2">$40</p>
                                                     </div>
@@ -290,6 +342,9 @@
                         </div>
                         <div class="tab-pane fade show" id="nav-voucher" role="tabpanel" aria-labelledby="nav-voucher-tab">
                             <span class="text-muted">商品券適用門市可點進去查看。使用商品券消費之商品如經取消或銷退者視同已使用，恕不得要求保留或轉換為現金，商品券恕不找零。請於有效期限內使用，逾期將會退款。退款後需三周作業時間，將退款回原購買帳戶或信用卡。退款金額請以品牌公告為主。品牌/門市擁有做最後說明調整的權利。</span>
+                            <div class=" d-grid gap-2 d-md-flex justify-content-md-center align-content-center mb-2 mt-2">
+                                <button class="display-in-mobile btn btn-primary" id="nav-discount-tab" data-bs-toggle="tab" data-bs-target="#nav-discount" type="button" role="tab" aria-controls="nav-discount" aria-selected="false">商品券</button>
+                            </div>
                     </div>
                 </div>
             </div>

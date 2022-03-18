@@ -1,6 +1,3 @@
-/* body {
-    background: #dedede;
-}  */
 #coupon .kiri {
     border-right: 1px dashed #ddd;
     width: 40% !important;
@@ -38,3 +35,5 @@
 #coupon .time {
     font-size: 1.6rem;
 }
+
+
