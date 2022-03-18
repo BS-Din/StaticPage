@@ -104,7 +104,7 @@
     width: 41%;
 }
 .searchzone_finddistrict_dropdown_btn:hover,
-.searchzone_finddistrict_imput input:hover{
+.searchzone_finddistrict_input input:hover{
     border: 0.5px solid black;
 }
 .searchzone_finddistrict_input input{
@@ -120,6 +120,28 @@
     width: 93%;
     border-radius: 5px;
     height: 65px;
+}
+.searchzone_finddistrict_commonaddress{
+    margin-left: 30px;
+}
+.form-check-input {
+    width: 1.25em;
+    height: 1.23em;
+}
+.form-check-input:checked{
+    width: 1.25em;
+    height: 1.23em;
+    background-color: var(--din-main-blue);
+    border-color: var(--din-main-blue);
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.5rem rgba(13, 109, 253, 0.23)
+}
+.form-check-input:hover{
+    box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.13);
+}
+.form-check-input:checked:hover{
+    box-shadow: 0 0 0 0.5rem rgba(13, 109, 253, 0.23)
 }
 /* 找品牌Modal */
 .searchzone_findbrand_input-group{
