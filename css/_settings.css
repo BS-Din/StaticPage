@@ -22,6 +22,7 @@
     --din-icon-social: #444444;
     --din-icon-ashcan: #ababab;
     --din-icon-star: #f9a825; /* 卡片的星星 */
+    --din-icon-star-light: #FDDCA8;
     --din-icon-category: #000000;
     --din-icon-notify-bell: #00b900;
 
@@ -208,7 +209,44 @@ ol, ul{
     overflow: hidden;
 }
 
+input{
+    border: 1px solid var(--din-input-border);
+}
+
 .input_noshadow:focus{
-    box-shadow: none;
+    box-shadow: none !important;
     border-color: var(--din-input-border);
+}
+
+input[type="text"], input[type="text"]{
+    border-radius: var(--din-card-border-radius-small);
+}
+
+input[type="text"]:not([disabled], .is-invalid):hover, 
+input[type="tel"]:not([disabled], .is-invalid):hover
+{
+    border: 1px solid black;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus
+{
+    box-shadow: none !important;
+    border-color: var(--din-input-border);
+}
+
+input[type="text"]:not(.is-invalid):focus-visible,
+input[type="tel"]:not(.is-invalid):focus-visible
+{
+    outline: none !important;
+    border-width: 1px;
+}
+
+input.btn-check:focus + label.btn{
+    box-shadow: none !important;
+}
+
+/* 卷軸隱藏 */
+::-webkit-scrollbar {
+    width: 0px;
 }
