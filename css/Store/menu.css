@@ -16,7 +16,9 @@
     }
 
     /* 上半部 */
-    .menu_container {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
         max-width: 1200px;
         font-size: 14px;
     }
@@ -81,7 +83,7 @@
     }
     
     @media screen and (min-width: 576px) {
-        .menu_container {
+        .container {
             padding-right: 40px;
             padding-left: 40px;
             margin-right: auto;
