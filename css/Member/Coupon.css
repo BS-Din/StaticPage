@@ -36,4 +36,10 @@
     font-size: 1.6rem;
 }
 
+#textlistn.open{
+    display: block;
+}
 
+#textlistn{
+    display: none;
+}
