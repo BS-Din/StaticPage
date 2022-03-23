@@ -517,6 +517,11 @@
 
 
         <script>
+            window.onload = function(){
+                discount();
+                voucher();
+            }
+
             var discount=function(){
             document.getElementById('nav-discount-btn').style.display=(document.getElementById('nav-discount-btn').style.display=='none')?'block':'none';
             }
