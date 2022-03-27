@@ -43,3 +43,20 @@
 #textlistn{
     display: none;
 }
+
+#select{
+    width: 40%;
+}
+.bg-secondary{
+    background-color: #ff6482;
+}
+
+
+.icon-container_box img {
+    justify-content: flex-start;
+    align-items: flex-start;
+    object-fit: contain;
+    max-width: 54px;
+    max-height: 54px;
+}
+

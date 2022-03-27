@@ -75,45 +75,31 @@
                                 </nav>
                             </div>
                         </nav>
-                        <div class="row g-2 align-items-center hide-in-ads mb-3 ">
+                        <div class="row ">
                             <div class="col-12">
-                                <div class="row mt-3">
-                                    <div class="col-6">
+                                <div class="col-12">
+                                    <div class="row g-3 align-items-center hide-in-ads mt-3 mb-3">
                                         <div class="col-auto">
                                             <label for="inputPassword6" class="col-form-label">品牌</label>
                                         </div>
-                                        <div class="col-auto">
-                                            <div class="row">
-                                                <div class="col-md mb-3">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                                            <option selected>全部</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto" id="select">
+                                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                <option selected>全部</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
                                         <div class="col-auto">
                                             <label for="inputPassword6" class="col-form-label">狀態</label>
                                         </div>
-                                        <div class="col-auto">
-                                            <div class="row">
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                                            <option selected>全部</option>
-                                                            <option value="1">可使用</option>
-                                                            <option value="2">轉贈紀錄</option>
-                                                            <option value="3">歷史紀錄</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto" id="select">
+                                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                <option selected>全部</option>
+                                                <option value="1">可使用</option>
+                                                <option value="2">轉贈紀錄</option>
+                                                <option value="3">歷史紀錄</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +108,7 @@
                         
                         
                         <div class="col-12 mb-3 display-in-mobile">
-                            <div class="col-md">
+                            <div class="col-md mb-3">
                                 <div class="form-floating">
                                     <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>全部</option>
@@ -132,7 +118,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md">
+                            <div class="col-md mb-3">
                                 <div class="form-floating">
                                     <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>全部</option>
@@ -163,20 +149,22 @@
                                     <div class="col-sm-6 mt-3">
                                         <div class="btn bg-white rounded mb-3 d-flex justify-content-between"   id="coupon">
                                             <div class="kiri p-3">
-                                                <div class="info icon-container ">
+                                                <div class="info icon-container">
                                                     <div class="icon-container_box">
-                                                        <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
-                                                        <p class="text-center mt-2">$40</p>
+                                                        <img src="/img/Shared_layout/logo1.jpg" alt="totoprayogo.com"  class="rounded-circle"/>
+                                                        <div>
+                                                            <p class="text-center mt-2">$40</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -187,34 +175,35 @@
                                                         <div class="modal-header">
                                                             <div class="m-auto text-center">
                                                                 <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
-                                                                <h5 class="modal-title " id="exampleModalLabel">Modal title</h5>
-                                                                <span class="badge bg-secondary">Valid</span>
-                                                                <span class="badge bg-secondary">Valid</span>
+                                                                <h5 class="modal-title " id="exampleModalLabel">消費任一飲品熟成紅茶20元加價購</h5>
+                                                                <span class="badge bg-secondary">剩16天</span>
+                                                                <span class="badge bg-secondary">可使用</span>
                                                             </div>
-                                                            <button type="button" class="btn btn-outline-danger btn-close ms-0 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            <button type="button" data-bs-dismiss="modal" aria-label="Close"><i
+                                                                class="fas fa-times-circle text_pink fz_18"></i></button>
                                                         </div>
                                                     </div>
-                                                <div class="modal-body">
-                                                    <p>
-                                                        本券僅限於你訂線上訂購系統，單筆消費任1杯飲品即可以20元加價購女神薑檸1杯（訂單折抵40元，等同20元加價購），每筆訂單限用1張折價券，不與其他優惠併用。使用折價券消費之商品如經取消或滯退者，折價券視同已使用，恕不得要求保留或轉換為現金，逾期視同自動作廢，不得申請補發。
-                                                    </p>
-                                                    <br>
-                                                    <p>
-                                                        取得來源:
-                                                    </p>
-                                                    <br>
-                                                    <p>
-                                                        使用期限:
-                                                    </p>
-                                                    <br>
-                                                    <p>
-                                                        使用限制:
-                                                    </p>
-                                                    <br>
-                                                    <p>
-                                                        可用門市:
-                                                    </p>
-                                                </div>
+                                                    <div class="modal-body">
+                                                        <p>
+                                                            本券僅限於你訂線上訂購系統，單筆消費任1杯飲品即可以20元加價購熟成紅茶1杯（訂單折抵40元，等同20元加價購），每筆訂單限用1張折價券，不與其他優惠併用。使用折價券消費之商品如經取消或滯退者，折價券視同已使用，恕不得要求保留或轉換為現金，逾期視同自動作廢，不得申請補發。
+                                                        </p>
+                                                        <br>
+                                                        <p>
+                                                            取得來源: 其他方式贈送
+                                                        </p>
+                                                        <br>
+                                                        <p>
+                                                            使用期限:2022/03/15-2022/03/31
+                                                        </p>
+                                                        <br>
+                                                        <p>
+                                                            使用限制:可不可熟成紅茶之門市適用
+                                                        </p>
+                                                        <br>
+                                                        <p>
+                                                            可用門市:士林大北店、信義市府店、內湖江南店、台北國泰店、台北合江店、內湖園區店、大安復興店、台北石牌店、板橋府中店、蘆洲光華店、林口文化店、桃園南崁店、桃園南平店、桃園桃鶯店、新竹光復店、花蓮中正店、台中精誠店、高雄新堀江店、高雄左營店、永康中華店、台南東寧店、屏東中正店、桃園八德店、測試店、台南站前店、桃園永安店、竹北文興店、嘉義中正店、三峽北大店、樹林站前店、鳳山五甲店、土城海山店、土城中央店、三民建工店、長庚復興北店、苗栗竹南店、台北濟南店、楠梓德賢店、台南國華店、高雄苓雅店、台中神岡店、桃園大園店、台北北醫店、彰化民族店、南投埔里店、板橋中山店、台中勤美店、台中昌平店、台中豐原店、台北南京店、三重正義店、中正南門店、中和連城店、高雄岡山店、新莊輔大店、新店大坪林店、台中一中店、小港漢民店、南港園區店、汐止中興店、文山木新店、桃園龍潭店、中壢新生店、彰化伸港店、澎湖馬公店、台中南屯店、永和竹林店、台中大甲店、新莊新泰店、竹北三民店、板橋致理店、信義永春店、台中中工店、嘉義民雄店、基隆義二店、台南善化店、台北遼寧店、台北延平南店、板橋民治店、內壢中華店、高雄明華店
+                                                        </p>
+                                                    </div>
                                                 <div class=" modal-footer">
                                                     <div class="d-grid gap-2 col-6 mx-auto">
                                                         <a type="button" class="btn btn-secondary m-auto" data-bs-dismiss="modal" href="#">趕緊來用</a>
@@ -237,10 +226,10 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -275,10 +264,10 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -313,10 +302,10 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -361,10 +350,10 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -375,32 +364,32 @@
                                                         <div class="modal-header">
                                                             <div class="m-auto text-center">
                                                                 <img src="/img/Shared_layout/logo1.jpg" width="54px" height="54px" alt="totoprayogo.com"  class="rounded-circle"/>
-                                                                <h5 class="modal-title " id="exampleModalLabel">Modal title</h5>
-                                                                <span class="badge bg-secondary">Valid</span>
-                                                                <span class="badge bg-secondary">Valid</span>
+                                                                <h5 class="modal-title " id="exampleModalLabel">消費任一飲品熟成紅茶20元加價購</h5>
+                                                                <span class="badge bg-secondary">剩16天</span>
+                                                                <span class="badge bg-secondary">可使用</span>
                                                             </div>
                                                             <button type="button" class="btn btn-outline-danger btn-close ms-0 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                     </div>
                                                 <div class="modal-body">
                                                     <p>
-                                                        本券僅限於你訂線上訂購系統，單筆消費任1杯飲品即可以20元加價購女神薑檸1杯（訂單折抵40元，等同20元加價購），每筆訂單限用1張折價券，不與其他優惠併用。使用折價券消費之商品如經取消或滯退者，折價券視同已使用，恕不得要求保留或轉換為現金，逾期視同自動作廢，不得申請補發。
+                                                        本券僅限於你訂線上訂購系統，單筆消費任1杯飲品即可以20元加價購熟成紅茶1杯（訂單折抵40元，等同20元加價購），每筆訂單限用1張折價券，不與其他優惠併用。使用折價券消費之商品如經取消或滯退者，折價券視同已使用，恕不得要求保留或轉換為現金，逾期視同自動作廢，不得申請補發。
                                                     </p>
                                                     <br>
                                                     <p>
-                                                        取得來源:
+                                                        取得來源: 其他方式贈送
                                                     </p>
                                                     <br>
                                                     <p>
-                                                        使用期限:
+                                                        使用期限:2022/03/15-2022/03/31
                                                     </p>
                                                     <br>
                                                     <p>
-                                                        使用限制:
+                                                        使用限制:可不可熟成紅茶之門市適用
                                                     </p>
                                                     <br>
                                                     <p>
-                                                        可用門市:
+                                                        可用門市:士林大北店、信義市府店、內湖江南店、台北國泰店、台北合江店、內湖園區店、大安復興店、台北石牌店、板橋府中店、蘆洲光華店、林口文化店、桃園南崁店、桃園南平店、桃園桃鶯店、新竹光復店、花蓮中正店、台中精誠店、高雄新堀江店、高雄左營店、永康中華店、台南東寧店、屏東中正店、桃園八德店、測試店、台南站前店、桃園永安店、竹北文興店、嘉義中正店、三峽北大店、樹林站前店、鳳山五甲店、土城海山店、土城中央店、三民建工店、長庚復興北店、苗栗竹南店、台北濟南店、楠梓德賢店、台南國華店、高雄苓雅店、台中神岡店、桃園大園店、台北北醫店、彰化民族店、南投埔里店、板橋中山店、台中勤美店、台中昌平店、台中豐原店、台北南京店、三重正義店、中正南門店、中和連城店、高雄岡山店、新莊輔大店、新店大坪林店、台中一中店、小港漢民店、南港園區店、汐止中興店、文山木新店、桃園龍潭店、中壢新生店、彰化伸港店、澎湖馬公店、台中南屯店、永和竹林店、台中大甲店、新莊新泰店、竹北三民店、板橋致理店、信義永春店、台中中工店、嘉義民雄店、基隆義二店、台南善化店、台北遼寧店、台北延平南店、板橋民治店、內壢中華店、高雄明華店
                                                     </p>
                                                 </div>
                                                 <div class=" modal-footer">
@@ -425,10 +414,10 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -463,10 +452,10 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -501,16 +490,17 @@
                                             <div class="tengah py-3 w-100 text-start p-2 ">
                                                 <div>
                                                     <h5 class="fs-5 fw-bold">可不可熟成紅茶</h5>
-                                                    <h6 class="fs-6">漢神巨蛋店-神仙薑奶20元加價購</h6>
-                                                    <p class="text-muted mb-0">2022/03/16-2022/03/15</p>
-                                                    <span class="badge bg-secondary">Valid</span>
-                                                    <span class="badge bg-secondary">Valid</span>
+                                                    <h6 class="fs-6">熟成紅茶20元加價購</h6>
+                                                    <p class="text-muted mb-0">2022/03/15-2022/03/31</p>
+                                                    <span class="badge bg-secondary">剩16天</span>
+                                                    <span class="badge bg-secondary">可使用</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
