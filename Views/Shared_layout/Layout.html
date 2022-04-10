@@ -18,27 +18,35 @@
     <header>
         <nav class="shadow bg-body navbar navbar-expand-lg navbar-light navbar-fixed-top py-3">
             <div class="container navbar-collapse-center justify-content-center align-content-center">
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse col-5" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-5 mb-lg-0 me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">訂購</a>
+                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">訂購</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">購物車</a>
+                            <a class="nav-link active" aria-current="page" asp-controller="Order" asp-action ="Carts">購物車</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">訂單</a>
+                            <a class="nav-link active" aria-current="page" asp-controller="Order" asp-action="Index">訂單</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">兌換專區</a>
+                            <a class="nav-link active" aria-current="page" asp-controller="Member" asp-action="Coupon">兌換專區</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">更多 </a>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">更多</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">品牌專區</a></li>
-                                <li><a class="dropdown-item" href="#">相關條款</a></li>
-                                <li><a class="dropdown-item" href="#">意見回饋</a></li>
+                                <li><a class="dropdown-item" asp-controller="Store" asp-action="BrandZone">品牌專區</a></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">相關條款</a>
+        
+                                    <!-- 子選單Level 2 -->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">使用者條款</a></li>
+                                        <li><a class="dropdown-item" href="#">隱私權條款</a></li>
+                                        <li><a class="dropdown-item" href="#">信用卡條款</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="Member" asp-action="ResponsePage">意見回饋</a></li>
                                 <li><a class="dropdown-item" href="#">官方客服</a></li>
                                 <li><a class="dropdown-item" href="#">新手教學</a></li>
                             </ul>
@@ -105,6 +113,22 @@
                 </li>
                 <li class="m-3 text-center">
                     <a href="#"><i class="fas fa-user"></i>登入</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg_page layout_more d-none">
+        <div class="col-8 m-auto mt-4 d-flex justify-content-center align-content-center">
+            <ul>
+                <li class="m-3">
+                    <a href="#"><i class="fas fa-user-tag"></i></i></i>使用者條款</a>
+                </li>
+                <li class="m-3">
+                    <a href="#"><i class="fas fa-user-secret"></i>隱私權條款</a>
+                </li>
+                <li class="m-3">
+                    <a href="#"><i class="fas fa-credit-card"></i>信用卡條款</a>
                 </li>
             </ul>
         </div>
