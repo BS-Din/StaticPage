@@ -87,6 +87,7 @@
             </div>
         </nav>
     </header>
+    
     <div class="bg_page layout_more d-none">
         <div class="col-8 m-auto">
             <ul class="d-flex flex-column justify-content-center align-content-center">
@@ -103,7 +104,7 @@
                     <a href="#"><i class="far fa-credit-card"></i>信用卡</a>
                 </li>
                 <li class="m-3 text-center">
-                    <a href="#"><i class="fas fa-list-alt"></i>相關條款</a>
+                    <a class="btn text-dark m-1 input_noshadow" href="#" role="button" onclick="SwitchTerms()"><i class="fas fa-list-alt"></i>相關條款</a>
                 </li>
                 <li class="m-3 text-center">
                     <a href="#"><i class="far fa-comment-dots"></i>意見回饋</a>
@@ -118,16 +119,19 @@
         </div>
     </div>
 
-    <div class="bg_page layout_more d-none">
-        <div class="col-8 m-auto mt-4 d-flex justify-content-center align-content-center">
-            <ul>
-                <li class="m-3">
-                    <a href="#"><i class="fas fa-user-tag"></i></i></i>使用者條款</a>
+    <div class="bg_page layout__terms d-none">
+        <div class="col-8 m-auto">
+            <ul class="d-flex justify-content-center align-content-center">
+                <li class="m-3 text-center">
+                    <button onclick= javascript:history.back()>返回上一頁</button>
                 </li>
-                <li class="m-3">
+                <li class="m-3 text-center">
+                    <a href="#"><i class="fas fa-user-tag"></i>使用者條款</a>
+                </li>
+                <li class="m-3 text-center">
                     <a href="#"><i class="fas fa-user-secret"></i>隱私權條款</a>
                 </li>
-                <li class="m-3">
+                <li class="m-3 text-center">
                     <a href="#"><i class="fas fa-credit-card"></i>信用卡條款</a>
                 </li>
             </ul>
@@ -232,8 +236,7 @@
                     <p>會員</p>
                 </a>
 
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1 input_noshadow" href="#" role="button"
-                    data-mdb-ripple-color="dark" style="text-decoration:none;" onclick="SwitchMore()"><i class="fas fa-ellipsis-h"></i>
+                <a class="btn text-dark m-1 input_noshadow" href="#" role="button" onclick="SwitchMore()" ><i class="fas fa-ellipsis-h"></i>
                     <p>更多</p>
                 </a>
             </section>
@@ -253,6 +256,16 @@
             }
             else{
                 more.classList.add('d-none')
+            }
+        }
+
+        const terms = document.querySelector('.layout_terms')
+        function SwitchTerms(){
+            if(terms.classList.contains('.d-none')){
+                terms.classList.remove('.d-none')
+            }
+            else{
+                terms.classList.add('.d-none')
             }
         }
     </script>
