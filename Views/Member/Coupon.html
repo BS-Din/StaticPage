@@ -84,7 +84,7 @@
                                         <div class="col-auto">
                                             <div class="row">
                                                 <div class="col-md">
-                                                    <div class="form-floating">
+                                                    <div class="Brand form-floating" id="coupon_select_dropdownitem">
                                                         <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
                                                             <option selected>全部</option>
                                                             <option value="1">One</option>
@@ -103,7 +103,7 @@
                                         <div class="col-auto">
                                             <div class="row">
                                                 <div class="col-md">
-                                                    <div class="form-floating">
+                                                    <div class="Status form-floating">
                                                         <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
                                                             <option selected>全部</option>
                                                             <option value="1">可使用</option>
@@ -404,7 +404,7 @@
                                                 </div>
                                                 <div class=" modal-footer">
                                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                                        <a type="button" class="btn btn-secondary m-auto" data-bs-dismiss="modal" href="#">趕緊來用</a>
+                                                        <a type="button" class="btn btn-secondary m-auto" id="Coupon_modal_submitbtn" data-bs-dismiss="modal" href="#">趕緊來用</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -529,37 +529,37 @@
             }
         }
 
-const searchSelectDropdownitem = document.getElementById('search_select_dropdownitem')
-const searchShopCardsBox = document.getElementById('search_shopcardsbox')
-const searchBrand = document.getElementById('search_brand')
-const searchBrandItems = document.querySelectorAll('.branditem.dropdown-item')
-const searchCategory = document.getElementById('search_category')
-const searchCategoryItems = document.querySelectorAll('.categoryitem.dropdown-item')
-let searchModalSubmitBtn
-let requestData = {Brand: '全部', Category: '全部', Evaluate: '全部' }
+    const couponSelectDropdownitem = document.getElementById('coupon_select_dropdownitem')
+    const couponShopCardsBox = document.getElementById('tab')
+    const couponBrand = document.getElementById('floatingSelectGrid')
+    const couponBrandItems = document.querySelectorAll('.Brand.dropdown-item')
+    const couponStatus = document.getElementById('floatingSelectGrid')
+    const couponStatusItems = document.querySelectorAll('.Status.dropdown-item')
+    let CouponModalSubmitBtn
+    let requestData = { Brand: '全部', Status: '全部' }
 
-window.onload = function () {
-    searchBrandItems.forEach(item => {
+    window.onload = function () {
+    CouponBrandItems.forEach(item => {
         item.onclick = function () {
-            searchBrand.value = item.innerText
+            CouponBrand.value = item.innerText
             if (window.innerWidth >= 992) {
                 requestData.Filter = true
-                requestData.Brand = searchBrand.value
+                requestData.Brand = CouponBrand.value
                 getShopCards(requestData)
             } else {
                 searchModalSubmitBtn.disabled = false
             }
         }
     })
-    searchCategoryItems.forEach(item => {
+    CouponStatusItems.forEach(item => {
         item.onclick = function () {
-            searchCategory.innerText = item.innerText
+            CouponStatus.innerText = item.innerText
             if (window.innerWidth >= 992) {
                 requestData.Filter = true
-                requestData.Category = searchCategory.innerText
+                requestData.Category = CouponStatus.innerText
                 getShopCards(requestData)
             } else {
-                searchModalSubmitBtn.disabled = false
+                CouponModalSubmitBtn.disabled = false
             }
         }
     })
@@ -573,28 +573,28 @@ function getShopCards(data) {
         method: 'POST',
         body: JSON.stringify(data)
     }).then(r => r.text()).then(r => {
-        searchShopCardsBox.innerHTML = r
+        CouponShopCardsBox.innerHTML = r
         setFavorite()
     })
 }
 function createSubmitButton(btntext, btnclickfunc) {
-    searchModalSubmitBtn = document.createElement('button')
-    searchModalSubmitBtn.type = 'submit'
-    searchModalSubmitBtn.classList.add('p-4', 'w-50', 'rounded-1', 'bg_pink', 'text_white', 'fw-bold')
-    searchModalSubmitBtn.id = 'search_modal_submitbtn'
-    searchModalSubmitBtn.disabled = true
-    searchModalSubmitBtn.innerText = btntext
-    searchModalSubmitBtn.onclick = btnclickfunc
+    CouponModalSubmitBtn = document.createElement('button')
+    CouponModalSubmitBtn.type = 'submit'
+    CouponModalSubmitBtn.classList.add('p-4', 'w-50', 'rounded-1', 'bg_pink', 'text_white', 'fw-bold')
+    CouponModalSubmitBtn.id = 'Coupon_modal_submitbtn'
+    CouponModalSubmitBtn.disabled = true
+    CouponModalSubmitBtn.innerText = btntext
+    CouponModalSubmitBtn.onclick = btnclickfunc
 }
 function openFilter() {
     requestData.Filter = false
     requestData.Brand = '全部'
     requestData.Category = '全部'
     requestData.Evaluate = '全部'
-    searchBrand.disabled = false
-    searchCategory.disabled = false
-    searchBrand.innerText = '全部'
-    searchCategory.innerText = '全部'
+    couponBrand.disabled = false
+    CouponStatus.disabled = false
+    couponBrand.innerText = '全部'
+    CouponStatus.innerText = '全部'
 }
     
 
