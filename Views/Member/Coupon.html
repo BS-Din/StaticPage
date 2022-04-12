@@ -517,19 +517,6 @@
 
 
         <script type="text/javascript">
-            // window.onload = function(){
-            //     discount();
-            //     voucher();
-            // }
-
-            // var discount=function(){
-            // document.getElementById('nav-discount-btn').style.display=(document.getElementById('nav-discount-btn').style.display=='none')?'block':'none';
-            // }
-
-            // var voucher=function(){
-            // document.getElementById('nav-voucher-btn').style.display=(document.getElementById('nav-voucher-btn').style.display=='none')?'block':'none';
-            // }
-
             function CouponButton()
         {
             var c = document.getElementById("nav-discount-btn");
@@ -542,9 +529,76 @@
             }
         }
 
+const searchSelectDropdownitem = document.getElementById('search_select_dropdownitem')
+const searchShopCardsBox = document.getElementById('search_shopcardsbox')
+const searchBrand = document.getElementById('search_brand')
+const searchBrandItems = document.querySelectorAll('.branditem.dropdown-item')
+const searchCategory = document.getElementById('search_category')
+const searchCategoryItems = document.querySelectorAll('.categoryitem.dropdown-item')
+let searchModalSubmitBtn
+let requestData = {Brand: '全部', Category: '全部', Evaluate: '全部' }
 
+window.onload = function () {
+    searchBrandItems.forEach(item => {
+        item.onclick = function () {
+            searchBrand.value = item.innerText
+            if (window.innerWidth >= 992) {
+                requestData.Filter = true
+                requestData.Brand = searchBrand.value
+                getShopCards(requestData)
+            } else {
+                searchModalSubmitBtn.disabled = false
+            }
+        }
+    })
+    searchCategoryItems.forEach(item => {
+        item.onclick = function () {
+            searchCategory.innerText = item.innerText
+            if (window.innerWidth >= 992) {
+                requestData.Filter = true
+                requestData.Category = searchCategory.innerText
+                getShopCards(requestData)
+            } else {
+                searchModalSubmitBtn.disabled = false
+            }
+        }
+    })
+}
+function getShopCards(data) {
+    fetch('/Store/Search', {
+        headers: {
+            'Accept': 'application/json,text/plain',
+            'Content-Type': 'application/json;charset=UTF-8'
+        },
+        method: 'POST',
+        body: JSON.stringify(data)
+    }).then(r => r.text()).then(r => {
+        searchShopCardsBox.innerHTML = r
+        setFavorite()
+    })
+}
+function createSubmitButton(btntext, btnclickfunc) {
+    searchModalSubmitBtn = document.createElement('button')
+    searchModalSubmitBtn.type = 'submit'
+    searchModalSubmitBtn.classList.add('p-4', 'w-50', 'rounded-1', 'bg_pink', 'text_white', 'fw-bold')
+    searchModalSubmitBtn.id = 'search_modal_submitbtn'
+    searchModalSubmitBtn.disabled = true
+    searchModalSubmitBtn.innerText = btntext
+    searchModalSubmitBtn.onclick = btnclickfunc
+}
+function openFilter() {
+    requestData.Filter = false
+    requestData.Brand = '全部'
+    requestData.Category = '全部'
+    requestData.Evaluate = '全部'
+    searchBrand.disabled = false
+    searchCategory.disabled = false
+    searchBrand.innerText = '全部'
+    searchCategory.innerText = '全部'
+}
+    
 
-            </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
